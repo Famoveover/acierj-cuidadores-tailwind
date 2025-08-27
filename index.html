@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACIERJ - Associação de Cuidadores</title>
+    <!-- Tailwind CSS COMPILADO para PRODUÇÃO -->
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- CDN para desenvolvimento - remover em produção -->
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    
+    <!-- CONFIGURAÇÃO PERSONALIZADA (aplicada durante compilação) -->
+    <!--<script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'montserrat': ['Montserrat', 'Arial', 'sans-serif'],
+            },
+            colors: {
+              'primary': '#009688',
+              'secondary': '#4caf50', 
+              'tertiary': '#8bc34a',
+              'light-bg': '#e6f2f0',
+              'text-dark': '#2e4e3f',
+            },
+          }
+        }
+      }
+    </script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-montserrat bg-light-bg text-text-dark text-base leading-relaxed">
+    <header class="bg-primary text-white shadow-lg py-10 lg:py-8">
+      <div class="flex items-center gap-10 max-w-6xl mx-auto px-8 flex-wrap">
+        <img src="acierj.png" alt="Logo ACIERJ" class="max-w-[120px] rounded-xl shadow-lg transition-transform duration-200 hover:scale-105 hover:-rotate-2" />
+        <div class="header-text">
+          <h1 class="text-4xl font-bold mb-2 m-0">ACIERJ</h1>
+          <p class="text-base opacity-90 m-0">
+            Associação dos Cuidadores da Pessoa Idosa, da Saúde Mental e com
+            Deficiência do Estado do RJ
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="bg-secondary text-center py-3 relative">
+      <div class="flex flex-wrap justify-center items-center gap-2">
+        <a href="index.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-1 my-1 transition-colors duration-200 text-sm hover:bg-primary bg-primary">Início</a>
+        <a href="sobre.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-1 my-1 transition-colors duration-200 text-sm hover:bg-primary">Quem Somos</a>
+        
+        <!-- Dropdown de Serviços -->
+        <div class="relative group">
+          <button class="text-white inline-flex items-center py-3 px-6 no-underline font-medium rounded-full mx-1 my-1 transition-colors duration-200 text-sm hover:bg-primary group-hover:bg-primary">
+            Serviços
+            <svg class="ml-1 w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          
+          <!-- Dropdown Menu -->
+          <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <div class="py-2">
+              <a href="servicos.html" class="block px-4 py-3 text-text-dark hover:bg-light-bg transition-colors duration-200 border-b border-gray-100">
+                <div class="flex items-center">
+                  <span class="text-lg mr-3">🎯</span>
+                  <div>
+                    <div class="font-medium">Todos os Serviços</div>
+                    <div class="text-sm text-gray-600">Visão completa</div>
+                  </div>
+                </div>
+              </a>
+              <a href="servicos.html#orientacao" class="block px-4 py-3 text-text-dark hover:bg-light-bg transition-colors duration-200 border-b border-gray-100">
+                <div class="flex items-center">
+                  <span class="text-lg mr-3">🤝</span>
+                  <div>
+                    <div class="font-medium">Orientação</div>
+                    <div class="text-sm text-gray-600">Suporte individualizado</div>
+                  </div>
+                </div>
+              </a>
+              <a href="servicos.html#capacitacao" class="block px-4 py-3 text-text-dark hover:bg-light-bg transition-colors duration-200 border-b border-gray-100">
+                <div class="flex items-center">
+                  <span class="text-lg mr-3">📚</span>
+                  <div>
+                    <div class="font-medium">Capacitação</div>
+                    <div class="text-sm text-gray-600">Cursos e treinamentos</div>
+                  </div>
+                </div>
+              </a>
+              <a href="servicos.html#consultoria" class="block px-4 py-3 text-text-dark hover:bg-light-bg transition-colors duration-200">
+                <div class="flex items-center">
+                  <span class="text-lg mr-3">💼</span>
+                  <div>
+                    <div class="font-medium">Consultoria</div>
+                    <div class="text-sm text-gray-600">Orientação especializada</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <a href="eventos.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-1 my-1 transition-colors duration-200 text-sm hover:bg-primary">Eventos</a>
+        <a href="associe-se.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-1 my-1 transition-colors duration-200 text-sm hover:bg-primary">Associe-se</a>
+        <a href="contato.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-1 my-1 transition-colors duration-200 text-sm hover:bg-primary">Contato</a>
+      </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto p-5">
+      <div class="bg-primary text-white shadow-lg rounded-3xl py-10 px-8 text-center mb-10">
+        <h2 class="text-2xl lg:text-4xl text-white mb-3">Bem-vindo à ACIERJ</h2>
+        <p class="text-base lg:text-lg">
+          Promovendo cuidado, acolhimento e apoio aos cuidadores e suas
+          famílias.
+        </p>
+      </div>
+
+      <section class="mb-8">
+        <h3 class="text-xl font-semibold text-text-dark mb-4 pb-2 border-b-2 border-secondary">Nossa Missão</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border-l-4 border-primary transform hover:-translate-y-2 group">
+            <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">🤝</div>
+            <h4 class="font-semibold text-text-dark mb-3">Suporte</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Oferecemos apoio emocional e orientação para cuidadores em todas as fases do cuidado.
+            </p>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border-l-4 border-secondary transform hover:-translate-y-2 group">
+            <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">📚</div>
+            <h4 class="font-semibold text-text-dark mb-3">Capacitação</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Cursos e treinamentos especializados para aprimorar conhecimentos e técnicas de cuidado.
+            </p>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border-l-4 border-tertiary transform hover:-translate-y-2 group">
+            <div class="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">🌟</div>
+            <h4 class="font-semibold text-text-dark mb-3">Valorização</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Reconhecemos e valorizamos o importante trabalho realizado pelos cuidadores.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h3 class="text-xl font-semibold text-text-dark mb-4 pb-2 border-b-2 border-secondary">Acesso Rápido</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a href="associe-se.html" class="block bg-gradient-to-br from-primary to-secondary text-white rounded-lg p-4 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="text-center">
+              <div class="text-2xl mb-2">🎯</div>
+              <div class="font-semibold">Associe-se</div>
+              <div class="text-xs opacity-90 mt-1">Faça parte</div>
+            </div>
+          </a>
+          
+          <a href="eventos.html" class="block bg-gradient-to-br from-secondary to-tertiary text-white rounded-lg p-4 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="text-center">
+              <div class="text-2xl mb-2">📅</div>
+              <div class="font-semibold">Eventos</div>
+              <div class="text-xs opacity-90 mt-1">Próximos</div>
+            </div>
+          </a>
+          
+          <a href="servicos.html" class="block bg-gradient-to-br from-tertiary to-secondary text-white rounded-lg p-4 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="text-center">
+              <div class="text-2xl mb-2">⚡</div>
+              <div class="font-semibold">Serviços</div>
+              <div class="text-xs opacity-90 mt-1">Explore</div>
+            </div>
+          </a>
+          
+          <a href="contato.html" class="block bg-gradient-to-br from-primary to-tertiary text-white rounded-lg p-4 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div class="text-center">
+              <div class="text-2xl mb-2">💬</div>
+              <div class="font-semibold">Contato</div>
+              <div class="text-xs opacity-90 mt-1">Fale conosco</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h3 class="text-xl font-semibold text-text-dark mb-4 pb-2 border-b-2 border-secondary">Notícias e Eventos</h3>
+        <p class="text-base leading-relaxed mb-4">
+          Fique por dentro dos próximos encontros, cursos e campanhas sociais
+          promovidas pela ACIERJ.
+        </p>
+        <p class="text-sm italic text-gray-600">
+          (Esta área será atualizada com conteúdos dinâmicos em breve)
+        </p>
+      </section>
+
+      <section class="mb-8">
+        <h3 class="text-xl font-semibold text-text-dark mb-4 pb-2 border-b-2 border-secondary">Postagens Recentes</h3>
+        <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-secondary hover:shadow-lg transition-shadow duration-300">
+          <div class="flex justify-between items-start flex-wrap gap-4">
+            <div class="flex-1 min-w-0">
+              <h4 class="text-lg font-semibold text-primary mb-3">Título da Postagem</h4>
+              <p class="text-base leading-relaxed text-gray-700">
+                Conteúdo de exemplo para futuras postagens da equipe ACIERJ. Aqui
+                você poderá divulgar notícias, avisos, campanhas e muito mais.
+                Este espaço é mais largo e compacto, alinhado à esquerda, para
+                destacar informações importantes de forma profissional.
+              </p>
+            </div>
+            <span class="bg-tertiary text-white px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap">24/07/2025</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-text-dark text-white text-center py-6 mt-10">
+      <p class="m-0">© 2025 ACIERJ – Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>
+

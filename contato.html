@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - ACIERJ</title>
+    <!-- Tailwind CSS COMPILADO para PRODUÇÃO -->
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- CDN para desenvolvimento - remover em produção -->
+    <!--<script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'montserrat': ['Montserrat', 'Arial', 'sans-serif'],
+            },
+            colors: {
+              'primary': '#009688',
+              'secondary': '#4caf50', 
+              'tertiary': '#8bc34a',
+              'light-bg': '#e6f2f0',
+              'text-dark': '#2e4e3f',
+            },
+          }
+        }
+      }
+    </script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-montserrat bg-light-bg text-text-dark text-base leading-relaxed">
+    <header class="bg-primary text-white shadow-lg py-10 lg:py-8">
+      <div class="flex items-center gap-10 max-w-6xl mx-auto px-8 flex-wrap">
+        <img src="acierj.png" alt="Logo ACIERJ" class="max-w-[120px] rounded-xl shadow-lg transition-transform duration-200 hover:scale-105 hover:-rotate-2" />
+        <div class="header-text">
+          <h1 class="text-4xl font-bold mb-2 m-0">ACIERJ</h1>
+          <p class="text-base opacity-90 m-0">
+            Associação dos Cuidadores da Pessoa Idosa, da Saúde Mental e com
+            Deficiência do Estado do RJ
+          </p>
+        </div>
+      </div>
+    </header>
+    <nav class="bg-secondary text-center py-3">
+      <a href="index.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-2 my-1 transition-colors duration-200 text-sm hover:bg-primary">Início</a>
+      <a href="sobre.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-2 my-1 transition-colors duration-200 text-sm hover:bg-primary">Quem Somos</a>
+      <a href="servicos.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-2 my-1 transition-colors duration-200 text-sm hover:bg-primary">Serviços</a>
+      <a href="eventos.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-2 my-1 transition-colors duration-200 text-sm hover:bg-primary">Eventos</a>
+      <a href="associe-se.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-2 my-1 transition-colors duration-200 text-sm hover:bg-primary">Associe-se</a>
+      <a href="contato.html" class="text-white inline-block py-3 px-6 no-underline font-medium rounded-full mx-2 my-1 transition-colors duration-200 text-sm hover:bg-primary bg-primary">Contato</a>
+    </nav>
+    <main class="max-w-4xl mx-auto p-5">
+      <div class="bg-primary text-white shadow-lg rounded-3xl py-10 px-8 text-center mb-10">
+        <h2 class="text-2xl lg:text-4xl text-white mb-3">Entre em Contato</h2>
+        <p class="text-base lg:text-lg">
+          Estamos aqui para ajudar você
+        </p>
+      </div>
+      <section class="mb-8">
+        <h3 class="text-xl font-semibold text-text-dark mb-4 pb-2 border-b-2 border-secondary">Fale Conosco</h3>
+        <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-tertiary hover:shadow-lg transition-shadow duration-300">
+          <p class="text-base leading-relaxed mb-6">
+            Entre em contato com a ACIERJ para dúvidas, sugestões ou informações
+            sobre nossos serviços e eventos.
+          </p>
+          
+          <!-- Botões de Contato -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <button onclick="openModal('emailModal')" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition-colors duration-200 shadow-md hover:shadow-lg transform hover:scale-105">
+              📧 Enviar Email
+            </button>
+            <button onclick="openModal('phoneModal')" class="bg-tertiary text-white px-6 py-3 rounded-lg hover:bg-secondary transition-colors duration-200 shadow-md hover:shadow-lg transform hover:scale-105">
+              📱 Ver Telefones
+            </button>
+          </div>
+
+          <!-- Cards de Contato Rápido -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="text-center p-4 bg-light-bg rounded-lg border hover:shadow-md transition-shadow duration-200">
+              <div class="text-2xl mb-2">📍</div>
+              <h4 class="font-semibold text-text-dark">Estado</h4>
+              <p class="text-sm text-gray-600">Rio de Janeiro, RJ</p>
+            </div>
+            <div class="text-center p-4 bg-light-bg rounded-lg border hover:shadow-md transition-shadow duration-200">
+              <div class="text-2xl mb-2">💼</div>
+              <h4 class="font-semibold text-text-dark">CNPJ</h4>
+              <p class="text-sm text-gray-600 font-mono">17.028.461/0001-75</p>
+            </div>
+            <div class="text-center p-4 bg-light-bg rounded-lg border hover:shadow-md transition-shadow duration-200">
+              <div class="text-2xl mb-2">�</div>
+              <h4 class="font-semibold text-text-dark">Email</h4>
+              <p class="text-sm text-gray-600">acierj@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal de Email -->
+      <div id="emailModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-2xl max-w-md w-full transform transition-all duration-300 scale-95 opacity-0" id="emailModalContent">
+          <div class="bg-primary text-white px-6 py-4 rounded-t-xl">
+            <div class="flex justify-between items-center">
+              <h3 class="text-lg font-semibold">📧 Formulário de Contato</h3>
+              <button onclick="closeModal('emailModal')" class="text-white hover:text-gray-200 text-xl">&times;</button>
+            </div>
+          </div>
+          <div class="p-6">
+            <form class="space-y-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" placeholder="Seu nome">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" placeholder="seu@email.com">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Assunto</label>
+                <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+                  <option>Informações sobre serviços</option>
+                  <option>Associação</option>
+                  <option>Eventos</option>
+                  <option>Outros</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
+                <textarea rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20" placeholder="Sua mensagem..."></textarea>
+              </div>
+              <div class="flex gap-3 pt-4">
+                <button type="submit" class="flex-1 bg-primary text-white py-2 px-4 rounded-lg hover:bg-secondary transition-colors duration-200">
+                  Enviar Mensagem
+                </button>
+                <button type="button" onclick="closeModal('emailModal')" class="px-4 py-2 text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                  Cancelar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal de Telefones -->
+      <div id="phoneModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-2xl max-w-md w-full transform transition-all duration-300 scale-95 opacity-0" id="phoneModalContent">
+          <div class="bg-tertiary text-white px-6 py-4 rounded-t-xl">
+            <div class="flex justify-between items-center">
+              <h3 class="text-lg font-semibold">📱 Contatos Telefônicos</h3>
+              <button onclick="closeModal('phoneModal')" class="text-white hover:text-gray-200 text-xl">&times;</button>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="space-y-4">
+              <div class="flex items-center p-3 bg-light-bg rounded-lg">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white mr-3">�</div>
+                <div>
+                  <div class="font-semibold text-gray-800">Cássia Gouveia</div>
+                  <div class="text-gray-600">(21) 97614-4915</div>
+                  <div class="text-xs text-gray-500">Coordenação</div>
+                </div>
+              </div>
+              <div class="flex items-center p-3 bg-light-bg rounded-lg">
+                <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-white mr-3">�</div>
+                <div>
+                  <div class="font-semibold text-gray-800">Janaína Nascimento</div>
+                  <div class="text-gray-600">(21) 9 9378-5374</div>
+                  <div class="text-xs text-gray-500">Secretaria</div>
+                </div>
+              </div>
+              <div class="flex items-center p-3 bg-light-bg rounded-lg">
+                <div class="w-10 h-10 bg-tertiary rounded-full flex items-center justify-center text-white mr-3">📧</div>
+                <div>
+                  <div class="font-semibold text-gray-800">Email Oficial</div>
+                  <div class="text-gray-600">acierj@gmail.com</div>
+                  <div class="text-xs text-gray-500">Contato institucional</div>
+                </div>
+              </div>
+              
+              <!-- Botões de Ação -->
+              <div class="grid grid-cols-2 gap-3 mt-4">
+                <a href="https://wa.me/5521976144915" target="_blank" class="bg-green-500 text-white py-2 px-3 rounded-lg text-center text-sm hover:bg-green-600 transition-colors duration-200">
+                  💬 Cássia
+                </a>
+                <a href="https://wa.me/5521993785374" target="_blank" class="bg-green-500 text-white py-2 px-3 rounded-lg text-center text-sm hover:bg-green-600 transition-colors duration-200">
+                  💬 Janaína
+                </a>
+              </div>
+            </div>
+            <div class="mt-6 text-center">
+              <button onclick="closeModal('phoneModal')" class="bg-primary text-white py-2 px-6 rounded-lg hover:bg-secondary transition-colors duration-200">
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-text-dark text-white text-center py-6 mt-10">
+      <p class="m-0">© 2025 ACIERJ – Todos os direitos reservados</p>
+    </footer>
+
+    <!-- JavaScript para Modais -->
+    <script>
+      function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        const content = document.getElementById(modalId + 'Content');
+        
+        modal.classList.remove('hidden');
+        
+        // Animação de entrada
+        setTimeout(() => {
+          content.classList.remove('scale-95', 'opacity-0');
+          content.classList.add('scale-100', 'opacity-100');
+        }, 10);
+      }
+
+      function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        const content = document.getElementById(modalId + 'Content');
+        
+        // Animação de saída
+        content.classList.remove('scale-100', 'opacity-100');
+        content.classList.add('scale-95', 'opacity-0');
+        
+        setTimeout(() => {
+          modal.classList.add('hidden');
+        }, 300);
+      }
+
+      // Fechar modal clicando fora
+      document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('bg-black')) {
+          const modalId = e.target.id;
+          closeModal(modalId);
+        }
+      });
+
+      // Fechar modal com ESC
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          ['emailModal', 'phoneModal'].forEach(modalId => {
+            if (!document.getElementById(modalId).classList.contains('hidden')) {
+              closeModal(modalId);
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
+

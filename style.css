@@ -1,0 +1,149 @@
+/* ===================================
+   STYLE.CSS OTIMIZADO - ACIERJ
+   Versão: Tailwind CSS Migration
+   Data: Agosto 2025
+=================================== */
+
+/* 🎯 APENAS ESTILOS ESSENCIAIS MANTIDOS */
+
+/* --- 1. Import da Fonte (Backup caso o Google Fonts falhe) --- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+/* --- 2. Variáveis CSS Globais (para referência e manutenção) --- */
+:root {
+  /* 🎨 Cores do Projeto (mantidas para documentação) */
+  --primary-color: #009688;   /* Verde institucional principal */
+  --secondary-color: #4caf50; /* Verde médio */
+  --tertiary-color: #8bc34a;  /* Verde claro */
+  --light-bg: #e6f2f0;        /* Fundo claro */
+  --text-dark: #2e4e3f;       /* Texto escuro padrão */
+  
+  /* 📏 Espaçamentos de referência */
+  --spacing-base: 1rem;
+  
+  /* ⏱️ Transições padrão */
+  --transition-speed: 0.3s;
+  --transition-ease: ease-in-out;
+}
+
+/* --- 3. Reset Básico (Tailwind já faz isso, mas garantindo) --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --- 4. Estilos Globais Essenciais --- */
+html {
+  scroll-behavior: smooth; /* Scroll suave para âncoras */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* Fonte definida via Tailwind: font-montserrat */
+  /* Background definido via Tailwind: bg-light-bg */
+  /* Cor definida via Tailwind: text-text-dark */
+}
+
+/* --- 5. Animações Customizadas (não disponíveis no Tailwind base) --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Classe para animação customizada */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* --- 6. Utilitários Especiais (quando Tailwind não é suficiente) --- */
+
+/* Gradiente personalizado para possíveis usos futuros */
+.gradient-acierj {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Sombra personalizada para logo */
+.shadow-logo {
+  box-shadow: 0 4px 20px rgba(0, 150, 136, 0.3);
+}
+
+/* --- 7. Print Styles (para impressão) --- */
+@media print {
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+  
+  nav, footer {
+    display: none !important;
+  }
+  
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/* --- 8. Acessibilidade --- */
+/* Foco visível para usuários de teclado */
+.focus-visible:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Redução de movimento para usuários sensíveis */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===================================
+   REGRAS REMOVIDAS NA MIGRAÇÃO:
+   
+   ❌ header, .header-flex (agora Tailwind)
+   ❌ nav, nav a (agora Tailwind)  
+   ❌ main (agora Tailwind)
+   ❌ .banner (agora Tailwind)
+   ❌ section (agora Tailwind)
+   ❌ .post-card-horizontal (agora Tailwind)
+   ❌ .btn-associe (agora Tailwind)
+   ❌ footer (agora Tailwind)
+   ❌ .logo-acierj (agora Tailwind)
+   ❌ Media queries (agora responsivo Tailwind)
+   
+   📊 REDUÇÃO: ~450 linhas → ~80 linhas (82% menor!)
+=================================== */
+
+/* ===================================
+   REGRAS REMOVIDAS NA MIGRAÇÃO:
+   
+   ❌ header, .header-flex (agora Tailwind)
+   ❌ nav, nav a (agora Tailwind)  
+   ❌ main (agora Tailwind)
+   ❌ .banner (agora Tailwind)
+   ❌ section (agora Tailwind)
+   ❌ .post-card-horizontal (agora Tailwind)
+   ❌ .btn-associe (agora Tailwind)
+   ❌ footer (agora Tailwind)
+   ❌ .logo-acierj (agora Tailwind)
+   ❌ Media queries (agora responsivo Tailwind)
+   
+   📊 REDUÇÃO: ~450 linhas → ~80 linhas (82% menor!)
+=================================== */
+
+
+
