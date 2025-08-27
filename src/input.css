@@ -1,0 +1,58 @@
+/* Tailwind CSS - Arquivo de entrada para compilação */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Componentes customizados */
+@layer components {
+  /* Gradiente personalizado para ACIERJ */
+  .gradient-acierj {
+    @apply bg-gradient-to-br from-primary to-secondary;
+  }
+  
+  /* Botão padrão ACIERJ */
+  .btn-acierj {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 hover:bg-secondary;
+  }
+  
+  /* Card padrão */
+  .card-acierj {
+    @apply bg-white rounded-lg shadow-md p-6 border-l-4 border-secondary hover:shadow-lg transition-shadow duration-300;
+  }
+  
+  /* Modal base */
+  .modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+  }
+  
+  .modal-content {
+    @apply bg-white rounded-xl shadow-2xl max-w-md w-full mx-4 transform transition-all duration-300;
+  }
+}
+
+/* Utilitários personalizados */
+@layer utilities {
+  /* Sombra especial para logo */
+  .shadow-logo {
+    box-shadow: 0 4px 20px rgba(0, 150, 136, 0.3);
+  }
+  
+  /* Animação de foco acessível */
+  .focus-acierj {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+}
+
+/* Animações customizadas */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
